@@ -79,6 +79,24 @@ npm run build
 npm run preview
 ```
 
+## Native iPhone App
+
+This project can be wrapped as a native iPhone app with Capacitor.
+
+```bash
+npm install
+npm run build
+npm run cap:sync
+npm run cap:open:ios
+```
+
+Then open the generated Xcode project, select your iPhone or simulator, and run.
+
+Notes:
+
+- The first time you open the project, Xcode may ask you to trust signing settings.
+- The app still uses your bundled Vite build, so update the web app with `npm run build` and `npm run cap:sync` before reinstalling.
+
 ## GitHub Pages Deployment
 
 This project is configured with:
